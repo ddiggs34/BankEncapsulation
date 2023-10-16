@@ -14,15 +14,18 @@ namespace BankEncapsulation
 
             
       //private field that we "cant see" to call in regular class (Program.cs)
-      private double _balance;
+      private double _balance = 0;
 
         //access to private field
-        public void Deposit(double amount)
+        public void Deposit(double depositMoney)
         {
-            _balance += amount; //this is saying that the BALANCE is going to be equal to or ADD to the 'amount' 
+            _balance += depositMoney; //this is saying that the BALANCE is going to be equal to or ADD to the 'amount' 
         }
 
-       
+       public void WithDraw(double withdrawMoney)
+        {
+            _balance -= withdrawMoney;
+        }
         public double GetBalance() 
         
         { 

@@ -11,7 +11,7 @@ namespace BankEncapsulation
             var username = new BankAccount();
             username.name = Console.ReadLine();
 
-            Console.Write($"Hello, {username.name}. ");
+            Console.Write($"Hello, {username.name}. Your current balance is ${username.GetBalance()}. ");
 
             while (true)
 
@@ -44,7 +44,29 @@ namespace BankEncapsulation
             
             username.Deposit(dollarAmount); //put a user response in the parathesis!!!!!!
 
-            Console.WriteLine($"Your new balance is ${username.GetBalance()}. Have a nice day");
+            Console.WriteLine($"Your new balance is ${username.GetBalance()}");
+
+
+
+            
+
+           // while (true)
+
+            //{
+
+              //  if (double.TryParse(Console.ReadLine(), out double depositAmount))
+                //{
+                    //Console.WriteLine($"You want to deposit ${depositAmount}?");
+                  //  break;
+                //}
+
+                //else
+                //{
+                  //  Console.WriteLine("Invalid input.Please enter a valid number");
+                    //break;
+                //}
+
+            //}
 
 
 
